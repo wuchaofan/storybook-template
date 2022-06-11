@@ -14,8 +14,26 @@ const withThemeProvider=(Story,context)=>{
 
 export const decorators = [withThemeProvider];
 
+const customViewports = {
+  '1440x963': {
+    name: '1440x963',
+    styles: {
+      width: '1440px',
+      height: '963px',
+    },
+  },
+  '1280x801': {
+    name: '1280x801',
+    styles: {
+      width: '1280px',
+      height: '801px',
+    },
+  },
+};
+
 
 export const parameters = {
+  viewport: { viewports: customViewports },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
@@ -41,3 +59,5 @@ export const globalTypes = {
     },
   },
 };
+
+
