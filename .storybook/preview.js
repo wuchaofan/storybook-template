@@ -1,4 +1,5 @@
 import cssTheme from '../src/styles/theme'
+import '../src/styles/index.css'
 
 
 // Function to obtain the intended theme
