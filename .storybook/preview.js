@@ -31,7 +31,6 @@ const customViewports = {
   },
 };
 
-
 export const parameters = {
   viewport: { viewports: customViewports },
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -49,7 +48,7 @@ export const globalTypes = {
     description: '主题',
     defaultValue: 'Theme-V1',
     toolbar: {
-      icon: 'circlehollow',
+      icon: 'graphql',
       // Array of plain string values or MenuItem shape (see below)
       items: ['Theme-V1', 'Theme-V2'],
       // Property that specifies if the name of the item will be displayed
